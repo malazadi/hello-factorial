@@ -1,15 +1,15 @@
-Sun 03 Oct 2021 01:13:02 AM PDT
+Sun 03 Oct 2021 01:18:00 AM PDT
 Linux csslab8h 4.19.0-17-amd64 #1 SMP Debian 4.19.194-3 (2021-07-18) x86_64 GNU/Linux
 uid=1182951(malazadi) gid=2121182951(malazadi) groups=2121182951(malazadi),605559(lab-access)
 =====================================================
 1. Compiles without warnings with -Wall -Wextra flags
 =====================================================
-/usr/bin/ld: /tmp/ccVtpjv9.o: in function `fact(int)':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:13: multiple definition of `fact(int)'; /tmp/ccjOyHDR.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:13: first defined here
-/usr/bin/ld: /tmp/ccVtpjv9.o: in function `memoryLeakFunction()':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:27: multiple definition of `memoryLeakFunction()'; /tmp/ccjOyHDR.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:27: first defined here
-/usr/bin/ld: /tmp/ccVtpjv9.o: in function `unusedFunction()':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:40: multiple definition of `unusedFunction()'; /tmp/ccjOyHDR.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:40: first defined here
+/usr/bin/ld: /tmp/ccMlGgWa.o: in function `fact(int)':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:13: multiple definition of `fact(int)'; /tmp/ccIwdUgK.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:13: first defined here
+/usr/bin/ld: /tmp/ccMlGgWa.o: in function `memoryLeakFunction()':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:27: multiple definition of `memoryLeakFunction()'; /tmp/ccIwdUgK.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:27: first defined here
+/usr/bin/ld: /tmp/ccMlGgWa.o: in function `unusedFunction()':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:40: multiple definition of `unusedFunction()'; /tmp/ccIwdUgK.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:40: first defined here
 collect2: error: ld returned 1 exit status
 =====================================================
 2. Runs and produces correct output
@@ -57,36 +57,36 @@ Running clang-format on ./main.cpp
 =====================================================
 5. No memory leaks using g++
 =====================================================
-/usr/bin/ld: /tmp/ccTRjwci.o: in function `fact(int)':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:13: multiple definition of `fact(int)'; /tmp/ccaqjGkK.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:13: first defined here
-/usr/bin/ld: /tmp/ccTRjwci.o: in function `memoryLeakFunction()':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:27: multiple definition of `memoryLeakFunction()'; /tmp/ccaqjGkK.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:27: first defined here
-/usr/bin/ld: /tmp/ccTRjwci.o: in function `unusedFunction()':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:40: multiple definition of `unusedFunction()'; /tmp/ccaqjGkK.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:40: first defined here
+/usr/bin/ld: /tmp/cc3sNTop.o: in function `fact(int)':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:13: multiple definition of `fact(int)'; /tmp/ccZnoZRr.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:13: first defined here
+/usr/bin/ld: /tmp/cc3sNTop.o: in function `memoryLeakFunction()':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:27: multiple definition of `memoryLeakFunction()'; /tmp/ccZnoZRr.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:27: first defined here
+/usr/bin/ld: /tmp/cc3sNTop.o: in function `unusedFunction()':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:40: multiple definition of `unusedFunction()'; /tmp/ccZnoZRr.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:40: first defined here
 collect2: error: ld returned 1 exit status
 =====================================================
 6. No memory leaks using valgrind, look for "definitely lost" 
 =====================================================
-/usr/bin/ld: /tmp/cc7UnmQD.o: in function `fact(int)':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:13: multiple definition of `fact(int)'; /tmp/ccsLPCaZ.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:13: first defined here
-/usr/bin/ld: /tmp/cc7UnmQD.o: in function `memoryLeakFunction()':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:27: multiple definition of `memoryLeakFunction()'; /tmp/ccsLPCaZ.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:27: first defined here
-/usr/bin/ld: /tmp/cc7UnmQD.o: in function `unusedFunction()':
-/home/NETID/malazadi/hello-factorial/factorial.cpp:40: multiple definition of `unusedFunction()'; /tmp/ccsLPCaZ.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:40: first defined here
+/usr/bin/ld: /tmp/ccjBaotE.o: in function `fact(int)':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:13: multiple definition of `fact(int)'; /tmp/ccXll0Nw.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:13: first defined here
+/usr/bin/ld: /tmp/ccjBaotE.o: in function `memoryLeakFunction()':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:27: multiple definition of `memoryLeakFunction()'; /tmp/ccXll0Nw.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:27: first defined here
+/usr/bin/ld: /tmp/ccjBaotE.o: in function `unusedFunction()':
+/home/NETID/malazadi/hello-factorial/factorial.cpp:40: multiple definition of `unusedFunction()'; /tmp/ccXll0Nw.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:40: first defined here
 collect2: error: ld returned 1 exit status
 cat: valgrind-output.txt: No such file or directory
 =====================================================
 7. Tests have full code coverage
 =====================================================
-/usr/bin/ld: /tmp/main-56ef2d.o: in function `unusedFunction()':
-/home/NETID/malazadi/hello-factorial/./factorial.cpp:40: multiple definition of `unusedFunction()'; /tmp/factorial-fc1ef0.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:40: first defined here
-/usr/bin/ld: /tmp/main-56ef2d.o: in function `memoryLeakFunction()':
-/home/NETID/malazadi/hello-factorial/./factorial.cpp:27: multiple definition of `memoryLeakFunction()'; /tmp/factorial-fc1ef0.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:27: first defined here
-/usr/bin/ld: /tmp/main-56ef2d.o: in function `fact(int)':
-/home/NETID/malazadi/hello-factorial/./factorial.cpp:13: multiple definition of `fact(int)'; /tmp/factorial-fc1ef0.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:13: first defined here
+/usr/bin/ld: /tmp/main-0510cb.o: in function `unusedFunction()':
+/home/NETID/malazadi/hello-factorial/./factorial.cpp:40: multiple definition of `unusedFunction()'; /tmp/factorial-11863b.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:40: first defined here
+/usr/bin/ld: /tmp/main-0510cb.o: in function `memoryLeakFunction()':
+/home/NETID/malazadi/hello-factorial/./factorial.cpp:27: multiple definition of `memoryLeakFunction()'; /tmp/factorial-11863b.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:27: first defined here
+/usr/bin/ld: /tmp/main-0510cb.o: in function `fact(int)':
+/home/NETID/malazadi/hello-factorial/./factorial.cpp:13: multiple definition of `fact(int)'; /tmp/factorial-11863b.o:/home/NETID/malazadi/hello-factorial/factorial.cpp:13: first defined here
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ERROR: ./check-code-coverage.sh: Failed to create executable
-Sun 03 Oct 2021 01:13:16 AM PDT
+Sun 03 Oct 2021 01:18:22 AM PDT
 =====================================================
 To create an output.txt file with all the output from this script
 Run the below command
